@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>ĐĂNG NHẬP</title>
+        <link rel="stylesheet" href="./CSS.css">
+        <link rel='shortcut icon' type="img/png" href="./Pic/shinhan-ds-logo.png">
+        <link rel="stylesheet" href="./fontawesome-free-5.13.1-web/css/fontawesome.css">
+    </head>
+
+    <body>
+        <div class="top-nav">
+            <div class="nav-left">
+            <p style="margin-top: 15px;">Đường dây nóng </p>
+            <a href="tel:+19001577">1900 1577</a>
+            <a href="#">Điểm Giao Dịch & ATM</a>
+            <a href="#">Tuyển dụng</a>
+            <a href="#">Liên Hệ</a>
+            <button class="btn-lang" onclick="btnlangclick()">EN</button>
+            </div>  
+
+            <div id='login'>
+                <span class="text-login">Ngân Hàng Trực Tuyến</span>
+                <button onclick="popuplogin()" class="btn-login">Đăng Nhập</button>
+            </div>
+            </div>
+        </div>
+
+        <div class="menu">
+            <a id='logo' href="./HOME.html"><img src="./Pic/logo.svg" width=15%></a>
+            <ul id='main-menu'>
+                    <li><a class="main-menu" href="./HOME.html">TRANG CHỦ</a></li>
+                    <li><a class="main-menu" href="#">GIỚI THIỆU</a>
+                        <div class="submenu-gioithieu">
+                        <ul class='submenu'>
+                            <div class="submenu1">
+                                <div class="gioi-thieu">
+                                    <li class="submenu-title"><a href='#'>Giới thiệu về Shinhan</a></li>
+                                    <li class="submenu-text"><a href='#'>Giới thiệu</a></li>
+                                    <li class="submenu-text"><a href='#'>Văn Hóa Shinhan</a></li>
+                                    <li class="submenu-text"><a href='#'>Tầm Nhìn & Sứ Mệnh</a></li>
+                                    <li class="submenu-text"><a href='#'>Giải Thưởng</a></li>
+                                </div>
+                                <div class="hoat-dong-xa-hoi">
+                                        <li class="submenu-title"><a href='#'>Hoạt Động Xã Hội</a></li>
+                                </div>
+                            </div>
+                            <div class="submenu2">
+                                <div class="tin-tuc">
+                                    <li class="submenu-title"><a href='#'>Tin Tức & Thông Báo</a></li>
+                                    <li class="submenu-text"><a href='#'>Tin Tức Hoạt Động</a></li>
+                                    <li class="submenu-text"><a href='#'>Thông Cáo Báo Chí</a></li>
+                                    <li class="submenu-text"><a href='#'>Tin Tức Báo Chí</a></li>
+                                    </div>
+                                    <div class="tuyen-dung">
+                                        <li class="submenu-title"><a href='#'>Tuyển Dụng</a></li>
+                                        </div>
+                            </div>
+                            <div class="submenu3">
+                                <div class="bctc">
+                                    <li class="submenu-title"><a href='#'>Báo Cáo Tài Chính</a></li>
+                                    </div>
+                                    <div class="cong-bo-thong-tin">
+                                    <li class="submenu-title"><a href='#'>Công bố thông tin về Tỷ lệ an toàn vốn</a></li>
+                                    </div>
+                                    <div class="thong-tin-lien-he">
+                                    <li class="submenu-title"><a href='#'>Thông Tin Liên Hệ</a></li>
+                                    </div>
+                            </div>
+                            <div class="submenu4">
+                                <div class="truy-cap-nhanh">
+                                    <li>Truy cập nhanh</li>
+                                    <li><a href='#'>> Biểu Phí Doanh Nghiệp</a></li>
+                                    <li><a href='#'>> Lãi Suất Tiền Gửi</a></li>
+                                    <li><a href='#'>> Mẫu Đơn</a></li>
+                                    </div> 
+                                <div class="giao-dich-ngay">
+                                    <li>GIAO DỊCH NGAY</li>
+                                    <li><a href="#">Ngân Hàng Trực Tuyến</a></li>
+                                    <li><a href="#">Điểm Giao Dịch & ATM</a></li>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                        
+                    </li>
+                    <li><a class="main-menu" href="#">SHINHAN PWM</a></li>
+                    <li><a class="main-menu" href="#">CÁ NHÂN</a>
+                        <div class="submenu-canhan">
+                        <ul class='submenu'>
+                            <div class="submenu1">
+                                <div class="gioi-thieu">
+                                    <li class="submenu-title"><a href='#'>Giới thiệu về Shinhan</a></li>
+                                    <li class="submenu-text"><a href='#'>Giới thiệu</a></li>
+                                    <li class="submenu-text"><a href='#'>Văn Hóa Shinhan</a></li>
+                                    <li class="submenu-text"><a href='#'>Tầm Nhìn & Sứ Mệnh</a></li>
+                                    <li class="submenu-text"><a href='#'>Giải Thưởng</a></li>
+                                </div>
+                                <div class="hoat-dong-xa-hoi">
+                                        <li class="submenu-title"><a href='#'>Hoạt Động Xã Hội</a></li>
+                                </div>
+                            </div>
+                            <div class="submenu2">
+                                <div class="tin-tuc">
+                                    <li class="submenu-title"><a href='#'>Tin Tức & Thông Báo</a></li>
+                                    <li class="submenu-text"><a href='#'>Tin Tức Hoạt Động</a></li>
+                                    <li class="submenu-text"><a href='#'>Thông Cáo Báo Chí</a></li>
+                                    <li class="submenu-text"><a href='#'>Tin Tức Báo Chí</a></li>
+                                    </div>
+                                    <div class="tuyen-dung">
+                                        <li class="submenu-title"><a href='#'>Tuyển Dụng</a></li>
+                                        </div>
+                            </div>
+                            <div class="submenu3">
+                                <div class="bctc">
+                                    <li class="submenu-title"><a href='#'>Báo Cáo Tài Chính</a></li>
+                                    </div>
+                                    <div class="cong-bo-thong-tin">
+                                    <li class="submenu-title"><a href='#'>Công bố thông tin về Tỷ lệ an toàn vốn</a></li>
+                                    </div>
+                                    <div class="thong-tin-lien-he">
+                                    <li class="submenu-title"><a href='#'>Thông Tin Liên Hệ</a></li>
+                                    </div>
+                            </div>
+                            <div class="submenu4">
+                                <div class="truy-cap-nhanh">
+                                    <li>Truy cập nhanh</li>
+                                    <li><a href='#'>> Biểu Phí Doanh Nghiệp</a></li>
+                                    <li><a href='#'>> Lãi Suất Tiền Gửi</a></li>
+                                    <li><a href='#'>> Mẫu Đơn</a></li>
+                                    </div> 
+                                <div class="giao-dich-ngay">
+                                    <li>GIAO DỊCH NGAY</li>
+                                    <li><a href="#">Ngân Hàng Trực Tuyến</a></li>
+                                    <li><a href="#">Điểm Giao Dịch & ATM</a></li>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                    </li>
+                    <li><a class="main-menu" href="#">DOANH NGHIỆP</a>
+                        <div class="submenu-doanhnghiep">
+                        <ul class='submenu'>
+                            <div class="submenu1">
+                                <div class="gioi-thieu">
+                                    <li class="submenu-title"><a href='#'>Giới thiệu về Shinhan</a></li>
+                                    <li class="submenu-text"><a href='#'>Giới thiệu</a></li>
+                                    <li class="submenu-text"><a href='#'>Văn Hóa Shinhan</a></li>
+                                    <li class="submenu-text"><a href='#'>Tầm Nhìn & Sứ Mệnh</a></li>
+                                    <li class="submenu-text"><a href='#'>Giải Thưởng</a></li>
+                                </div>
+                                <div class="hoat-dong-xa-hoi">
+                                        <li class="submenu-title"><a href='#'>Hoạt Động Xã Hội</a></li>
+                                </div>
+                            </div>
+                            <div class="submenu2">
+                                <div class="tin-tuc">
+                                    <li class="submenu-title"><a href='#'>Tin Tức & Thông Báo</a></li>
+                                    <li class="submenu-text"><a href='#'>Tin Tức Hoạt Động</a></li>
+                                    <li class="submenu-text"><a href='#'>Thông Cáo Báo Chí</a></li>
+                                    <li class="submenu-text"><a href='#'>Tin Tức Báo Chí</a></li>
+                                    </div>
+                                    <div class="tuyen-dung">
+                                        <li class="submenu-title"><a href='#'>Tuyển Dụng</a></li>
+                                        </div>
+                            </div>
+                            <div class="submenu3">
+                                <div class="bctc">
+                                    <li class="submenu-title"><a href='#'>Báo Cáo Tài Chính</a></li>
+                                    </div>
+                                    <div class="cong-bo-thong-tin">
+                                    <li class="submenu-title"><a href='#'>Công bố thông tin về Tỷ lệ an toàn vốn</a></li>
+                                    </div>
+                                    <div class="thong-tin-lien-he">
+                                    <li class="submenu-title"><a href='#'>Thông Tin Liên Hệ</a></li>
+                                    </div>
+                            </div>
+                            <div class="submenu4">
+                                <div class="truy-cap-nhanh">
+                                    <li>Truy cập nhanh</li>
+                                    <li><a href='#'>> Biểu Phí Doanh Nghiệp</a></li>
+                                    <li><a href='#'>> Lãi Suất Tiền Gửi</a></li>
+                                    <li><a href='#'>> Mẫu Đơn</a></li>
+                                    </div> 
+                                <div class="giao-dich-ngay">
+                                    <li>GIAO DỊCH NGAY</li>
+                                    <li><a href="#">Ngân Hàng Trực Tuyến</a></li>
+                                    <li><a href="#">Điểm Giao Dịch & ATM</a></li>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                    </li>
+                    <li><a class="main-menu" href="#">THẺ</a>
+                        <div class="submenu-the">
+                        <ul class='submenu'>
+                            <div class="submenu1">
+                                <div class="gioi-thieu">
+                                    <li class="submenu-title"><a href='#'>Giới thiệu về Shinhan</a></li>
+                                    <li class="submenu-text"><a href='#'>Giới thiệu</a></li>
+                                    <li class="submenu-text"><a href='#'>Văn Hóa Shinhan</a></li>
+                                    <li class="submenu-text"><a href='#'>Tầm Nhìn & Sứ Mệnh</a></li>
+                                    <li class="submenu-text"><a href='#'>Giải Thưởng</a></li>
+                                </div>
+                                <div class="hoat-dong-xa-hoi">
+                                        <li class="submenu-title"><a href='#'>Hoạt Động Xã Hội</a></li>
+                                </div>
+                            </div>
+                            <div class="submenu2">
+                                <div class="tin-tuc">
+                                    <li class="submenu-title"><a href='#'>Tin Tức & Thông Báo</a></li>
+                                    <li class="submenu-text"><a href='#'>Tin Tức Hoạt Động</a></li>
+                                    <li class="submenu-text"><a href='#'>Thông Cáo Báo Chí</a></li>
+                                    <li class="submenu-text"><a href='#'>Tin Tức Báo Chí</a></li>
+                                    </div>
+                                    <div class="tuyen-dung">
+                                        <li class="submenu-title"><a href='#'>Tuyển Dụng</a></li>
+                                        </div>
+                            </div>
+                            <div class="submenu3">
+                                <div class="bctc">
+                                    <li class="submenu-title"><a href='#'>Báo Cáo Tài Chính</a></li>
+                                    </div>
+                                    <div class="cong-bo-thong-tin">
+                                    <li class="submenu-title"><a href='#'>Công bố thông tin về Tỷ lệ an toàn vốn</a></li>
+                                    </div>
+                                    <div class="thong-tin-lien-he">
+                                    <li class="submenu-title"><a href='#'>Thông Tin Liên Hệ</a></li>
+                                    </div>
+                            </div>
+                            <div class="submenu4">
+                                <div class="truy-cap-nhanh">
+                                    <li>Truy cập nhanh</li>
+                                    <li><a href='#'>> Biểu Phí Doanh Nghiệp</a></li>
+                                    <li><a href='#'>> Lãi Suất Tiền Gửi</a></li>
+                                    <li><a href='#'>> Mẫu Đơn</a></li>
+                                    </div> 
+                                <div class="giao-dich-ngay">
+                                    <li>GIAO DỊCH NGAY</li>
+                                    <li><a href="#">Ngân Hàng Trực Tuyến</a></li>
+                                    <li><a href="#">Điểm Giao Dịch & ATM</a></li>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                    </li>
+                    <li><a class="main-menu" href="#">CHUYỂN TIỀN</a></li>
+                    <li><a class="main-menu" href="#">ĐỊNH CHẾ TÀI CHÍNH</a></li>
+            </ul>
+        </div>
+        
+
+        <div class="slideshow">
+            <div class="slide-fade">
+                <img src="./Pic/Slideshow/20200330-Website-Slider-Speed-consumer-loan.png" style="width: 100%;">
+                <div class="text-label-slide">Smart Credit</div>
+                <div class="text-heading-slide">Vay linh hoạt, tự do tài chính cùng Shinhan</div>
+                <div class="text">Với hạn mức vay linh hoạt từ 10 - 500 triệu đồng, Ngân Hàng Shinhan<br>có thể đáp ứng nhu cầu tài chính đa dạng của khách hàng mọi lúc, mọi nơi</div>
+                <div class="btn-slide">Tìm Hiểu Thêm</div>
+            </div>
+            <div class="slide-fade">
+                <img src="./Pic/Slideshow/20200406-Card-slider---Grab.png" style="width: 100%;">
+                <div class="text-label-slide">Thẻ tín dụng</div>
+                <div class="text-heading-slide">Cùng thẻ tín dụng Shinhan<br> bước vào thế giới ưu đãi</div>
+                <div class="text">Hoàn tiền lên đến 3.000.000 đồng hoặc nhận ngay mã ưu đãi điện tử<br>Grab lên đến 200.000 đồng khi mở thẻ tín dụng Shinhan</div>
+                <div class="btn-slide">Tìm Hiểu Thêm</div>
+            </div>
+            <div class="slide-fade">
+                <img src="./Pic/Slideshow/20200406-Card-slider-Lotte-card.png" style="width: 100%;">
+                <div class="text-label-slide">Thẻ tín dụng</div>
+                <div class="text-heading-slide">Muôn ngàn ưu đãi khi mở thẻ<br>tín dụng Shinhan - Lotte Mart</div>
+                <div class="text">Hoàn tiền lên đến 1.000.000 đồng và nhận ngay phích giữ nhiệt Elmich<br>cao cấp khi mở thẻ tín dụng</div>
+                <div class="btn-slide">Tìm Hiểu Thêm</div>
+            </div>
+            <div class="slide-fade">
+                <img src="./Pic/Slideshow/20200429-Carloan-slider.png" style="width: 100%;">
+                <div class="text-label-slide">Vay mua xe</div>
+                <div class="text-heading-slide">Khởi đầu của những hành trình mới</div>
+                <div class="text">Hạnh phúc là hành trình, không phải đích đến. Hãy làm cho hành<br>trình của bạn tiện nghi và thoải mái nhất có thể với gói mua xe ưu<br>đãi từ Ngân Hàng Shinhan!</div>
+                <div class="btn-slide">Tìm Hiểu Thêm</div>
+            </div>
+            <div class="slide-fade">
+                <img src="./Pic/Slideshow/20200429-Consumer-loan-slider.png" style="width:100%;">
+                <div class="text-label-slide">Vay tiêu dùng</div>
+                <div class="text-heading-slide">Ưu đãi lãi suất vay tiêu dùng từ<br>1,16%/tháng</div>
+                <div class="text">Chủ động trong mọi kế hoạch tài chính cá nhân với gói vay tiêu dùng<br>của Ngân Hàng Shinhan, lãi suất ưu đãi chỉ 1,16%/tháng</div>
+                <div class="btn-slide">Tìm Hiểu Thêm</div>
+            </div>
+            <div class="slide-fade">
+                <img src="./Pic/Slideshow/20200429-houseloan-slider.png" style="width: 100%;">
+                <div class="text-label-slide">Vay mua nhà</div>
+                <div class="text-heading-slide">An tâm xây tổ ấm</div>
+                <div class="text">Bạn sẽ không còn lo lắng lãi suất không ổn định và an tâm bắt đầu<br>trang mới cuộc sống</div>
+                <div class="btn-slide">Tìm Hiểu Thêm</div>
+            </div>
+        </div>
+            <div style="text-align: center;">
+                <span class="dot" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+            <main>
+                <div class="container">
+                <div class="login-form">
+                    <form action="" method="post">
+                        <h1>Đăng Nhập vào Internet Banking</h1>
+                        <div class="input-box">
+                            <i ></i>
+                            <input type="text" placeholder="Nhập username">
+                        </div>
+                        <div class="input-box">
+                            <i ></i>
+                            <input type="password" placeholder="Nhập mật khẩu">
+                        </div>
+                        <div class="btn-box">
+                            <button type="submit">
+                                Đăng nhập
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </main>
+            <footer>
+                <div class="footer1">
+                    <div class="footer1-left">
+                        <p class="text-heading-footer1">Tìm Hiểu Shinhan</p>
+                        <div class="menu-footer1">
+                    
+                        <ul>
+                        <li><a href='#'>Giới thiệu</li></a>
+                        <li><a href='#'>Hoạt Động Xã Hội</li></a>
+                        <li><a href='#'>Tin Tức Và Thông Báo</li></a>
+                        <li><a href='#'>Báo Cáo Tài Chính</li></a>
+                        <li><a href='#'>Công bố thông tin về Tỷ Lệ An Toàn Vốn</li></a>
+                        </ul>
+                        <ul>    
+                        <li><a href='#'>Biểu Phí Cá Nhân</li></a>
+                        <li><a href='#'>Biểu Phí Doanh Nghiệp</li></a>
+                        <li><a href='#'>Lãi suất tiền gửi cá nhân</li></a>
+                        <li><a href='#'>Lãi suất tiền gửi doanh nghiệp</li></a>
+                        <li><a href='#'>Tỷ giá</li></a>
+                        </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer1-right">
+                        <p class="text-heading-footer1">Thông Tin Hỗ Trợ</p>
+                    <div class="menu-footer1">
+                        <ul>
+                        <p class="text-footer1-right">Contact Center 24/7</p>
+                        <a class="hotline" href="tel:19001577">1900 1577</a>
+                        </ul>
+                        <ul>
+                        <p class="text-footer1-right">Câu Hỏi và Phản Hồi</p>
+                        <a class="mail" href="mailto:shinhanvietnam@shinhan.com">shinhanvietnam@shinhan.com</a>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            
+                <div class="footer2">
+                    <div class="ft2-box1">
+                        <span class="text-footer2">Bản tin Tin Tức và Khuyến Mãi</span>
+                        <input type="email" class="input-dienemail" placeholder="Địa Chỉ Email">
+                        <button class="btn-goi">Gởi</button>
+                    </div>
+                    <div class="ft2-box3">
+                        <span class="text-footer2">Theo Dõi Thêm Tại</span>
+                        <button class="btn-sukien">Sự kiện</button>
+                    </div>
+                
+                </div>
+                <div class="footer3">
+                    <img class="logo-ft" src="./Pic/logo-ft.svg" alt="" width="13%">
+                </div>
+            </footer>
+        
+        <script>
+            function btnlangclick() {
+               
+            }
+
+        // Khai báo biến slideIndex đại diện cho slide hiện tại
+        var slideIndex; 
+        // Khai báo hàm hiển thị slide
+        function showSlides() {
+            // Khai báo 3 biến sử dụng trong hàm showSlides này
+            var i;
+            var slides = document.getElementsByClassName('slide-fade'); // biến slides chứa 6 slide ở trên
+            var dots = document.getElementsByClassName('dot'); // biến dots chứa 6 dot ở trên
+
+            // Vòng lặp từ slide 1 đến slide 6, ẩn slide
+            for (i=0;i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+
+            // Vòng lặp từ dot 1 đến dot 6, replace trạng thái active của dot liền trước
+            // Ko có cái này vẫn chạy
+            for (i=0;i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(' active', '');
+            }
+
+
+            slides[slideIndex].style.display = "block";  // Vòng lặp tới slide nào thì slide đó hiển thị
+            dots[slideIndex].className += " active"; // Ko có cái này vẫn chạy
+
+            //chuyển đến slide tiếp theo
+            slideIndex++;
+
+            //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+            if (slideIndex > slides.length - 1) {
+            slideIndex = 0
+            }    
+            //tự động chuyển đổi slide sau 3s
+            setTimeout(showSlides, 3000);
+
+        }
+            //mặc định hiển thị slide đầu tiên mỗi khi load web
+             showSlides(slideIndex = 0);
+ 
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        /*
+        Trong đoạn script trên, có một điểm các bạn cần lưu ý đó là khi khai báo hàm showSlides 
+        mình không hề để tham số mà tại sao mình lại gọi hàm như thế này:
+showSlides(slideIndex = 0);
+showSlides(slideIndex = n);
+Thực chất đây không phải là truyền tham số, câu lệnh này có nghĩa là 
+trước khi chạy hàm showSlides() thì mình sẽ gán giá trị cho biến slideIndex. 
+Tại sao phải làm điều này ? 
+Các bạn có thể để ý hàm showSlides() không hề có tham số vậy làm sao nó biết cần hiển thị slide nào, 
+nó dựa vào biến slideIndex mình khai báo lúc đầu. Quy trinh hoạt động của trang sẽ như sau:
+Khi load xong trang tự động gọi hàm showSlides() với biến slideIndex = 0, 
+hàm này sẽ hiển thị slide sau đó tăng biến slideIndex lên một đơn vị, 
+tiếp đến nếu không có thao tác mình sử dụng setTimeout(showSlides, 5000); 
+để tự động chuyển slider sau 5s, khi này slideIndex = 1, 
+và hàm showSlides() lại lặp lại quá trình đó.
+Nếu có thao tác vào các chấm, hàm currentSlide(n)  
+sẽ được gọi với tham số n truyền vào là trang slide muốn đến, 
+đầu tiên ta gán lại biến slideIndex = n, sau đó gọi hàm showSlides().
+*/
+        function popuplogin() {
+            prompt('Tên Đăng Nhập')
+            prompt('Mật Khẩu')
+        }
+        </script>
+    </body>
+</html>

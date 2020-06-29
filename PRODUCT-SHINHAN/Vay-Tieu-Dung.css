@@ -1,0 +1,646 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body {
+    background-color: #f2f2f2;
+    height: auto;
+    width: auto;
+    position: relative;
+    display: block;
+}
+
+.top-nav {
+    background-color: #003375;
+    height: 50px;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    
+}
+.top-nav .nav-left {
+    
+    padding-left: 250px;
+    padding-right: 15px;
+    display: flex;
+}
+
+.top-nav .nav-left a {
+    margin: 15px;
+}
+
+.top-nav .nav-left a:hover {
+    color: yellow;
+}
+
+.top-nav #login {
+background-color: #1486d1;
+border-radius: 5px;
+
+}
+.text-login, .btn-login {
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+.btn-login {
+    height: 30px;
+    border: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 20px;
+    background-color: white;
+    transition: all 0.5s;
+}
+.btn-login:hover {
+    background-color: rgb(233, 225, 225);
+}
+
+.btn-lang {
+    height: 30px;
+    border: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 20px;
+    background-color: white;
+    transition: all 0.5s;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.btn-lang:hover {
+    background-color: rgb(233, 225, 225);
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: white;
+}
+/*----- Phần menu -----*/
+#main-menu {
+    float: right;
+}
+.menu {
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.menu #logo {
+    margin-left: 50px;
+}
+.menu a {
+    color:black;
+    text-decoration:none;
+    
+}
+
+.menu > ul > li {
+    display:inline-block;
+    font-size:15px;
+    padding:10px 10px;
+    margin-top: 4px;
+    font-weight: bold;
+    
+}
+
+.menu > ul > li:hover {
+    color: #cf9c51;
+    border-bottom: 3px solid #cf9c51;
+    padding-bottom: 24px;
+    text-decoration: none;
+}
+.truy-cap-nhanh {
+    color: #003375;
+}
+.submenu {
+    display: none;
+    position: absolute;
+   
+    z-index: 100;
+    width: 100%;
+    background-color: white;
+    margin-top: 27px;
+    box-shadow: 10px 10px 10px gray;
+    list-style: none;
+    height: 400px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.submenu1 > div {
+margin-bottom: 50px;
+}
+.submenu2 > div {
+    margin-bottom: 82px;
+}
+
+.submenu1 > div > li, .submenu2 > div > li,  .submenu4 > div > li {
+    margin-bottom: 10px;
+}
+.submenu3 > div > li {
+    margin-bottom: 20px;
+}
+
+.truy-cap-nhanh > li > a {
+    font-size: 18px;
+    color: #cf9c51;
+}
+
+.truy-cap-nhanh > li:hover {
+    text-decoration: underline;
+}
+
+.giao-dich-ngay {
+    color: white;
+    background-color: #cf9c51;
+    padding: 20px;
+    padding-right: 100px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: 113px;
+}
+.giao-dich-ngay > li > a {
+    color: white;
+}
+
+.giao-dich-ngay > li > a:hover {
+    text-decoration: underline;
+}
+.main-menu:hover {
+    color: #cf9c51;
+}
+.submenu-text a:hover {
+    text-decoration: underline;
+}
+
+.submenu-title a {
+    color: #1486d1;
+}
+
+.submenu-title a:hover {
+    color: #003375;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.submenu > div {
+    margin-top: 40px;
+    margin-left: 100px;
+    display: inline-block;
+    vertical-align: top;
+    
+}
+.submenu-gioithieu {
+    margin-left: -500px;
+}
+.submenu-canhan {
+    margin-left: -750px;
+}
+.submenu-doanhnghiep {
+    margin-left: -850px;
+}
+.submenu-the {
+    margin-left: -990px;
+}
+
+
+/*----- Het Phần menu -----*/
+
+
+
+#footer{
+    height: 200px;
+    width: 100%;
+    background-color: rgb(195, 216, 224);
+    
+}
+
+#footer > ul > li{
+    display: inline-block;
+    font-size:25px;
+}
+
+.menu-footer {
+    margin-top: 30px;
+}
+
+#footer a {
+    text-decoration:none;
+}
+
+#footer .logo {
+    margin-top: 10px;
+}
+
+/*----Slideshow-----*/
+* {
+    box-sizing:border-box
+  }
+  .slideshow {
+      position: relative;
+     
+  }
+  /* Ẩn slide */
+  .slide-fade {
+    display: none;
+  }
+
+  /* Định dạng nội dung Caption */
+  .text {
+    color: black;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    
+    margin-bottom: 150px;
+    margin-left: 180px;
+  }
+.text-heading-slide {
+    color: #003375;
+    font-size: 35px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    
+    margin-bottom: 230px;
+    margin-left: 180px;
+    font-weight: bold;
+}
+.text-label-slide {
+    color: #cf9c51;
+    text-decoration: underline;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    
+    margin-bottom: 320px;
+    margin-left: 180px;
+    text-transform: uppercase;
+}
+.btn-slide {
+    background-color: #003375;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 55px;
+    border: none;
+    position: absolute;
+  font-size: 15px;
+  bottom: 8px;
+  margin-bottom: 110px;
+  margin-left: 190px;
+}
+
+  /* định dạng các chấm chuyển đổi các slide */
+  .dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  /* khi được hover, active đổi màu nền */
+.dot:hover {
+    background-color: #003375;
+  }
+.active {
+    background-color: #003375;
+  }
+
+  
+
+  .btn-slide:hover {
+      background-color: #1486d1;
+      transition: ease 0.5s;
+      cursor: pointer;
+      
+  }
+
+  /* Footer */
+  .footer1 {
+    padding-left: 100px;
+    background-color: white;
+    height: 250px;
+    width: 100%;
+    
+}
+
+
+.footer1 > div {
+    float: left;
+    margin-right: 100px;
+}
+.menu-footer1 {
+    display: flex;
+}
+
+.menu-footer1 > ul {
+  list-style: none;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+.menu-footer1 > ul > li a {
+    
+    color: #003375;
+}
+
+.menu-footer1 > ul > li {
+  padding-bottom: 10px;
+}
+.menu-footer1 > ul > li a:hover {
+  text-decoration: underline ;
+}
+
+.footer1 a {
+    text-decoration: none;
+}
+
+.text-heading-footer1 {
+  padding-top: 30px;
+  color: #cf9c51;
+  font-size: 20px;
+  letter-spacing: 0.25px;
+}
+
+.text-footer1-right {
+    color: #00397f;
+    font-size: 18px;
+}
+
+.footer1-right a {
+    text-decoration: none;
+    color: #676767;
+}
+
+.footer1-right .hotline {
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.footer1-right .mail:hover {
+    text-decoration: underline;
+}
+
+.footer2 {
+    height: 100px;
+    width: 100%;
+    background-color: #00397f;
+    
+}
+
+.footer2 div {
+    float: left;
+    margin-left: 100px;
+    margin-top: 30px;
+    
+}
+.ft2-box1 {
+    margin-right: 80px;
+}
+.input-dienemail {
+    margin-left: 50px;
+    border: 1px solid white;
+    padding: 8px 12px;
+    width: 35%;
+    background: none;
+    height: 38px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-transform: none;
+    letter-spacing: 0.25px;
+    line-height: normal;
+}
+
+.input-dienemail::-webkit-input-placeholder {
+    color: white;
+}
+
+.btn-goi {
+    margin-left: -5px;
+    border: 1px solid white;
+    width: 75px;
+    background: none;
+    height: 38px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    font-size: 18px;
+    line-height: normal;
+    text-transform: none;
+    letter-spacing: 0.25px;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btn-goi:hover {
+    background-color: #dbdbdb;
+    transition: ease 0.5s;
+    cursor: pointer;
+}
+.text-footer2 {
+    color: #cf9c51;
+    font-size: 20px;
+}
+
+.btn-sukien {
+    border: none;
+    margin-left: 20px;
+    border-radius: 30px;
+    height: 38px;
+    width: 100px;
+    color: white;
+    background-color: #cf9c51;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.25px;
+}
+
+.btn-sukien:hover {
+    background-color: white;
+    color: #003375;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+.footer3 {
+    height: 60px;
+    width: 100%;
+    background-color: #676767;
+}
+
+.logo-ft {
+    margin-left: 100px;
+    margin-top: 15px;
+}
+
+.login-form{
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 15px;
+    border: 2px dotted #cccccc;
+    border-radius: 10px;
+}
+h1{
+    color: #003375;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.input-box{
+    margin-bottom: 10px;
+}
+.input-box input{
+    padding: 7.5px 15px;
+    width: 100%;
+    border: 1px solid #cccccc;
+    outline: none;
+}
+.btn-box{
+    text-align: right;
+    margin-top: 30px;
+}
+.btn-box button{
+    padding: 7.5px 15px;
+    border-radius: 2px;
+    background-color: #003375;
+    color: #ffffff;
+    border: none;
+    outline: none;
+}
+.btn-box button:hover {
+    background-color: #dbdbdb;
+    color: #003375;
+    transition: ease 0.5s;
+}
+
+.btn-login a{
+    color: black;
+}
+
+/* CSS Tin-Dung.html */
+
+
+
+/*----menu 3*/
+
+.menu3 a{  
+    display:inline-block;
+    padding: 20px;
+    font-family: Arial;
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+    text-decoration:none;
+}
+.the1{
+    margin-left: 150px;
+    background-color: #01193a;
+    border-bottom: 3px solid #cf9c51;
+}
+.menu3{
+    background-color: #003375;
+    
+    
+}
+.menu3 :hover{
+    border-bottom: 3px solid #cf9c51;
+    background-color: #01193a;
+    transition: 0.1s;
+}
+/*het menu3*/
+
+/*Nội dung*/
+
+.main{
+   
+    border-bottom: 1px solid rgb(221,221,221);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 150px;
+}
+.main2{
+    padding-left: 200px;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.main1{
+    font-size: 30px;
+    color: #00397f;
+    font-weight: 550;
+    width: 270px;
+}
+.main0{
+    text-decoration: none;
+    color: #cacaca;
+    font-size: 16px;
+    font-weight: 400;
+}
+.btn-login1{
+    height: 40px;
+    width: 170px;
+    border: white;
+    color: white;
+    border-radius: 50px;
+    margin-top: 10px;
+    background-color: #00397f;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.btn-login1:hover {
+    background-color: #1486d1;
+}
+
+
+
+.text-label-con {
+    color: black;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    
+    
+    margin-top: -200px;
+    margin-left: 180px;
+  }
+
+.text-label-con a {
+    text-decoration: none;
+    color: black;
+}
+.text-label-con a:hover {
+    color: #676767;
+    transition: ease 0.5s;
+}
+
+.text-heading-con {
+    color: #003375;
+    font-size: 35px;
+    padding: 8px 12px;
+    position: absolute;
+    
+    margin-top: -150px;
+    margin-left: 180px;
+    font-weight: bold;
+}
